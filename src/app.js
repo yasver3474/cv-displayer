@@ -20,8 +20,13 @@ hbs.registerPartials(partialPath);
 
 app.set('views',viewPath);
 app.set('view engine','hbs');
+
+// Setup static directory to serve
+app.use(express.static(path.join(__dirname,'../public')));
+
+
 // Add basic Details
-app.post(('/cv'), async (req, res) => {
+app.post(('/user'), async (req, res) => {
     const user = new User(req.body);
     try{
         await user.save();
@@ -33,7 +38,7 @@ app.post(('/cv'), async (req, res) => {
     }
 });
 // Get Basic Details
-app.get('/cv', async(req,res)=>{
+app.get('/user', async(req,res)=>{
 
     try{
         const user = await User.find({});
@@ -168,6 +173,33 @@ app.get('/projects', async(req,res)=>{
 
 });
 
+//Get all details 
+app.get('/cv',async(req,res)=>{
+
+    try{
+        const user = await User.find({});
+        const education = await Education.find({});
+        const internship = await Internship.find({});
+        const certificates = await Certificates.find({});
+        const projects = await Projects.find({});
+        const misc = await Misc.find({});
+        const cv = {
+            user,
+            education,
+            internship,
+            certificates,
+            projects,
+            misc
+        }
+        res.send(cv);
+    } catch(error){
+        res.status(500).send(error);
+    }
+
+});
+app.get('',(req,res)=>{
+    res.render('index');
+})
 
 app.listen(port,()=>{
 

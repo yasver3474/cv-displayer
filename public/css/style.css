@@ -1,0 +1,144 @@
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;    
+    background-color: #000000;
+    background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
+    font-weight: 500;
+    /* color:white;
+    text-shadow:3px 2px black; */
+    
+}
+.container{
+    width:1024px;
+    display:grid;
+    grid-template-rows: ;
+    margin-left:auto;
+    margin-right:auto;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    
+}
+.header{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    color:white;
+    text-shadow:3px 2px black;
+
+}
+.header h4{
+    font-size:1.1rem;
+
+}
+.container h1{
+    color:white;
+    text-shadow:3px 2px black;
+}
+
+.app-image{
+    height:200px;
+    width:200px;
+    display:inline;
+}
+.icon{
+    display: inline-block;
+    text-decoration: none;
+    color:white;
+  
+}
+
+.linkedin{
+    stroke-width:3;
+    padding-top: 2px;
+}
+.educationSkills{
+    width:1024px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top;
+    display:grid;
+    grid-template-columns: 23% 77%;
+    color:white;
+    text-shadow:3px 2px black;
+
+}
+.skills{
+    grid-column: 1/2;
+}
+.education{
+    grid-column: 2/3;
+}
+.normal-text{
+    font-weight: 400;
+}
+.skillTypes p{
+    font-size:0.8rem;
+}
+
+.internships{
+    width:1024px;
+    margin-left:auto;
+    margin-right:auto;
+    color:white;
+    text-shadow:3px 2px black;
+    text-decoration: none;
+}
+.internships a{
+    color:white;
+    text-shadow:none;
+}
+.certificates{
+    color:white;
+    text-shadow:3px 2px black;
+    text-decoration: none;
+    width:1024px;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+.certificateGrid{
+    color:white;
+    text-shadow:3px 2px black;
+    text-decoration: none;
+    width:1024px;
+    display:grid;
+    margin-left:auto;
+    margin-right:auto;
+    grid-template-columns: 40% 20% 40%;
+    grid-template-rows: 30% 20% 20% 30%;
+}
+.course-1{
+    grid-column: 1/2;
+    grid-row:1/2;
+    align-self: center;
+}
+.course-2{
+    grid-column: 3/4;
+    grid-row:1/2;
+    align-self: center;
+}
+.course-3{
+    grid-column: 1/4;
+    grid-row:2/3;
+    align-self: center;
+}
+.course-4{
+    grid-column: 1/4;
+    grid-row:3/4;
+    align-self: center;
+}
+.course-5{
+    grid-column: 1/2;
+    grid-row:4/5;
+    align-self: center;
+}
+
+.course-6{
+    grid-column: 3/4;
+    grid-row:4/5;
+    align-self: center;
+}

@@ -3,7 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> --}}
+    <meta name="viewport"
+        content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
     <title>CV-Application</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -15,51 +17,59 @@
 <body>
 
 
+    {{!-- Intro box  --}}
 
-    <div class="container d-flex">
+    <div class="container d-md-flex mb-5">
         {{!-- <div class="text-center float-left"> --}}
         <img src="./images/yashvardhan.JPG" alt="Applicant's Image"
-            class="app-image img-fluid rounded-circle mt-5 float-left mr-5">
+            class="app-image img-fluid rounded-circle mt-md-5 float-md-left mr-md-5">
         {{!-- </div> --}}
-        <span class="header border-bottom pb-2 float-right">
-            <h1 class="mt-5">Yashvardhan Verma</h1>
-            <h4 class="pb-2">A budding B.Tech undergraduate with passion for UI/UX and Web Development. Also a Deep
+        <div class="header border-bottom pb-2 float-md-right">
+            <h1 class="mb-2 mt-md-5 text-center text-md-left">Yashvardhan Verma</h1>
+            <h4 class="pb-2 text-center text-md-left">A budding B.Tech undergraduate with passion for UI/UX and Web
+                Development. Also a Deep
                 Learning Enthusiast.</h4>
-            <i data-feather="phone-call" class="pr-2"></i>
-            <p class="icon pr-5">+91 9873444783</p>
-            <i data-feather="linkedin" class="pr-2"></i><a href="https://www.linkedin.com/in/yashvardhan-verma/"
-                class="icon pr-5" target="blank">linkedin.com/in/yashvardhan</a>
-            <i data-feather="github" class="pr-2"></i><a href="https://github.com/yasver3474" class="icon pr-5"
-                target="blank">github.com/yasver3474</a>
-            <br>
-            <i data-feather="map-pin" class="pr-2"></i>
-            <p class="icon pr-4 mr-5">Delhi, India</p>
-            <i data-feather="mail" class=" ml-2 pr-2"></i>
-            <p class="icon pr-5">yasver3474@gmail.com</p>
+            <div class="reachme text-sm-right text-md-left">
+                <i data-feather="phone-call" class="pr-2"></i>
+                <a class="icon pr-5">+91 9873444783</a>
+                <br>
+                <i data-feather="linkedin" class="pr-2 "></i><a href="https://www.linkedin.com/in/yashvardhan-verma/"
+                    class="icon pr-5 " target="blank">linkedin.com/in/yashvardhan</a>
+                <br>
+                <i data-feather="github" class="pr-2 "></i><a href="https://github.com/yasver3474" class="icon pr-4"
+                    target="blank">github.com/yasver3474</a>
+                <br>
+                <i data-feather="map-pin" class="pr-2"></i>
+                <a class="icon pr-4 mr-5">Delhi, India</a>
+                <br>
+                <i data-feather="mail" class=" pr-2"></i>
+                <a class="icon pr-5">yasver3474@gmail.com</a>
+            </div>
 
-        </span>
+        </div>
 
 
     </div>
-    <div class="educationSkills mt-5">
+    {{!-- Education and Skills --}}
+    <div class="educationSkills mt-5 mb-5">
         <div class="skills">
             <h2 class="text-center border-bottom pb-2">Skills</h2>
             <div class="skillTypes mt-3">
-                <p class=" text-center border rounded-pill pt-2 pb-2">C++ - Intertmediate</p>
-                <p class=" text-center border rounded-pill pt-2 pb-2">JavaScript - Intertmediate</p>
-                <p class=" text-center border rounded-pill pt-2 pb-2">NodeJS - Intertmediate</p>
-                <p class=" text-center border rounded-pill pt-2 pb-2">Python - Intertmediate</p>
-                <p class=" text-center border rounded-pill pt-2 pb-2">HTML - Intertmediate</p>
-                <p class=" text-center border rounded-pill pt-2 pb-2">CSS - Intertmediate</p>
-                <p class=" text-center border rounded-pill pt-2 pb-2">Deep Learning - Intertmediate</p>
-                <p class=" text-center border rounded-pill pt-2 pb-2">Machine Learning - Intertmediate</p>
+                <p class=" text-center border rounded-md-pill pt-2 pb-2">C++ - Intertmediate</p>
+                <p class=" text-center border rounded-md-pill pt-2 pb-2">JavaScript - Intertmediate</p>
+                <p class=" text-center border rounded-md-pill pt-2 pb-2">NodeJS - Intertmediate</p>
+                <p class=" text-center border rounded-md-pill pt-2 pb-2">Python - Intertmediate</p>
+                <p class=" text-center border rounded-md-pill pt-2 pb-2">HTML - Intertmediate</p>
+                <p class=" text-center border rounded-md-pill pt-2 pb-2">CSS - Intertmediate</p>
+                <p class=" text-center border rounded-md-pill pt-2 pb-2">Deep Learning - Intertmediate</p>
+                <p class=" text-center border rounded-md-pill pt-2 pb-2">Machine Learning - Intertmediate</p>
             </div>
 
         </div>
         <div class="education ml-4">
             <h2 class="text-center mb-3 border-bottom pb-2">Education</h2>
             <div class="educationType">
-                <h4 class=" normal-text ml-5">B.Tech (Computer Science)</h4>
+                <h4 class=" normal-text ml-5">B.Tech (CSE)</h4>
                 <h5 class=" normal-text ml-5 float-left">Jaypee Institute of Information Techonology</h5>
                 <p class="float-right">8.2 CGPA</p>
                 <br>
@@ -87,9 +97,9 @@
 
     </div>
 
-
+    {{!-- Internships --}}
     <div class="internships mb-5">
-        <h2 class="text-center mb-3 border-bottom pb-2">Internships & Expierence</h2>
+        <h2 class="text-center mb-3 border-bottom pb-2 mb-5">Internships & Expierence</h2>
         <div class="educationType">
 
             <h4 class=" normal-text ml-5">Content Writer</h4>
@@ -100,13 +110,14 @@
         </div>
 
     </div>
+    {{!-- Certificates --}}
     <div class="certificates mb-5">
-        <h2 class="text-center mb-3 border-bottom pb-2 mb-5">Courses & Certificates</h2>
+        <h2 class="text-center  border-bottom pb-2 mb-3 mb-md-5">Courses & Certificates</h2>
         <div class="certificateGrid">
-            <div class="educationType course-1 mb-5 border pt-3 pb-3">
+            <div class="educationType course-1  mb-3 mb-md-5 border  p-sm-4  pt-md-3 pb-md-3 ">
 
-                <h4 class="normal-text ml-5  ">Geeks for Geeks</h4>
-                <p class="normal-text font-italic ml-5">A Geeks For Geeks Course on Data Structures and
+                <h4 class="normal-text ml-5 ">Geeks for Geeks</h4>
+                <p class="normal-text font-italic ml-md-5">A Geeks For Geeks Course on Data Structures and
                     Algorithms. </p>
                 <footer class="blockquote-footer float-right mr-4">
                     <small class="text-white font-italic" style="color:white;font-family: 'Raleway', sans-serif;">
@@ -114,73 +125,209 @@
                     </small>
             </div>
 
-            <div class="educationType  course-3 mb-5 border pt-3 pb-3">
-                <h4 class=" normal-text ml-5">Neural Networks and Deep Learning with Specialization in Convolutional
-                    Neural
-                    Networks</h4>
-                <p class="normal-text font-italic ml-5">Online course on Coursera taught by Professor Andrew
-                    Ng
-                </p>
-                <footer class="blockquote-footer float-right mr-4">
-                    <small class="text-white font-italic" style="color:white;font-family: 'Raleway', sans-serif;">
-                        Completed in December 2019
-                    </small>
-            
-            </div>
-            <div class="educationType  course-4 mb-5 border pt-3 pb-3">
 
-                <h4 class=" normal-text ml-5">Improving Deep Neural Networks: Hyperparameter tuning, Regularization and
-                    Optimization</h4>
-                <p class="normal-text font-italic float-none ml-5">Online course on Coursera taught by Professor Andrew
+            <div class="educationType  course-3   mb-3 mb-md-5 border  p-sm-4  pt-md-3 pb-md-3 ">
+                <h4 class=" normal-text ml-5">Neural Networks and Deep Learning</h4>
+                <p class="normal-text font-italic ml-md-5">Online course on Coursera taught by Professor Andrew
                     Ng
                 </p>
                 <footer class="blockquote-footer float-right mr-4">
                     <small class="text-white font-italic" style="color:white;font-family: 'Raleway', sans-serif;">
-                       Completed in March 2019
+                        <a href="https://www.coursera.org/account/accomplishments/records/XF3H3CUUVZ7S" target="blank">
+                            Completed in December 2019</a>
                     </small>
-            
+
             </div>
-            <div class="educationType course-2 mb-5 border pt-3 pb-3">
+
+            <div class="educationType  course-4    mb-3 mb-md-5 border p-sm-4  pt-md-3 pb-md-3 ">
+
+                <h4 class=" normal-text ml-5">Hyperparameter tuning, Regularization and
+                    Optimization</h4>
+                <p class="normal-text font-italic float-none ml-md-5">Online course on Coursera taught by Professor
+                    Andrew
+                    Ng
+                </p>
+                <footer class="blockquote-footer float-right mr-4">
+                    <small class="text-white font-italic" style="color:white;font-family: 'Raleway', sans-serif;">
+                        <a href="https://www.coursera.org/account/accomplishments/records/UDYFWU4WDBMB"
+                            target="blank">Completed in March 2019</a>
+                    </small>
+
+            </div>
+            <div class="educationType course-2  mb-3 mb-md-5 border  p-sm-4  pt-md-3 pb-md-3 ">
 
                 <h4 class=" normal-text ml-5  ">JavaScript Course on Udemy</h4>
-                <p class="normal-text font-italic float-none ml-5">An ES-6 JS course on Udemy with multiple real world
+                <p class="normal-text font-italic float-none ml-md-5">An ES-6 JS course on Udemy with multiple real
+                    world
                     projects.</p>
                 <footer class="blockquote-footer float-right mr-4">
                     <small class="text-white font-italic" style="color:white;font-family: 'Raleway', sans-serif;">
-                       Completed in June 2020
+                        <a href="https://www.udemy.com/certificate/UC-116c2625-bfcb-4a53-af83-0ff133426bce/"
+                            target="blank">Completed in June 2020</a>
                     </small>
             </div>
-            <div class="educationType course-5 mb-5 border pt-3 pb-3 ">
+            <div class="educationType course-5   mb-3 mb-md-5 border p-sm-4  pt-md-3 pb-md-3 ">
 
                 <h4 class=" normal-text ml-5">Responsive Web Design</h4>
-                <p class="normal-text font-italic float-none ml-5">A UI/UX course on Udemy with multiple real world
+                <p class="normal-text font-italic float-none ml-md-5">A UI/UX course on Udemy with multiple real world
                     projects.
                 </p>
                 <footer class="blockquote-footer float-right mr-4">
                     <small class="text-white font-italic" style="color:white;font-family: 'Raleway', sans-serif;">
-                       Completed in July 2020
+                        <a href="https://www.udemy.com/certificate/UC-0ae8fbbe-bf30-4e2d-871d-24b05cadd221/"
+                            target="blank">Completed in July 2020</a>
                     </small>
             </div>
-            <div class="educationType course-6 mb-5 border pt-3 pb-3">
+            <div class="educationType course-6   mb-3 mb-md-5 border  p-sm-4  pt-md-3 pb-md-3 ">
 
                 <h4 class=" normal-text ml-5 ">NodeJS</h4>
-                <p class="normal-text font-italic float-none ml-5">A NodeJS Course on Udemy with focus on Express and
+                <p class="normal-text font-italic float-none ml-md-5">A NodeJS Course on Udemy with focus on Express and
                     MongoDB.
                 </p>
                 <footer class="blockquote-footer float-right mr-4">
                     <small class="text-white font-italic" style="color:white;font-family: 'Raleway', sans-serif;">
-                       Ongoing
+                        Ongoing
                     </small>
             </div>
         </div>
 
     </div>
 
-    <div class="projects">
-        
+    <div class="projects mb-5">
+        <h2 class="text-center mb-3 border-bottom pb-2 mb-5">Personal Projects</h2>
+        <div class="projectGrid">
+            <div class="educationType pt-4 pb-4 project-1  ">
+                <img src="https://img.icons8.com/ios/50/000000/learning.png" class="float-left">
+                <h4 class="normal-text ml-5 mt-3 pl-2">Unusual Activity Detection </h4>
+                <p class="normal-text font-italic ml-5 pl-2" style="clear:both;">Detection of unusual activities in
+                    images and videos using algorithms like YOLO, CNN and One-class Support Vector Machines. Also
+                    created the dataset from scratch using web scraping techniques.</p>
+
+
+            </div>
+
+            <div class="educationType pt-4 pb-4 project-2  ">
+                <img src="https://img.icons8.com/ios/50/000000/learning.png" class="float-left">
+                <h4 class="normal-text ml-5 mt-3 pl-2">Detection of bacterial diseases in plants using deep learning
+                    techniques </h4>
+                <p class="normal-text font-italic ml-5 pl-2" style="clear:both;">Detected early onset and full blown
+                    bacterial infections in plants using CNN and improved the model's accuracy by hyper-parameter
+                    tuning.</p>
+
+
+            </div>
+            <div class="educationType pt-4 pb-4 project-3  ">
+                <img src="https://img.icons8.com/windows/50/000000/nodejs.png" class="float-left pt-2">
+                <h4 class="normal-text ml-5 mt-3 pl-2">CV Displayer </h4>
+                <p class="normal-text font-italic ml-5 pl-2" style="clear:both;">A Simple NodeJS application that
+                    fetches user's CV from a MongoDB database x and displays it in a neat and sophisticated manner</p>
+
+
+            </div>
+            <div class="educationType pt-4 pb-4 project-4  ">
+                <img src="https://img.icons8.com/ios-filled/50/000000/c-plus-plus-logo.png" class="float-left pt-2">
+                <h4 class="normal-text ml-5 mt-3 pl-2"> Fastest Shortest Route Finder</h4>
+                <p class="normal-text font-italic ml-5 pl-2" style="clear:both;">Tested various algorithms like
+                    Djikstra, BFS, DFS on the map of Delhi Metro to check and compare which algorithm computes the
+                    shortest distance from given source to a destination in minimum time.</p>
+
+
+            </div>
+
+
+        </div>
+
     </div>
 
-    
+    <div class="achievements mb-5">
+        <h2 class="text-center mb-3 border-bottom pb-2 mb-5 ">Achievements</h2>
+        <div class="achievementGrid">
+            <div class="educationType pt-4 pb-4 achieve-1  ">
+                <img src="https://img.icons8.com/ios-glyphs/50/000000/gold-medal.png" class="float-left pt-4">
+                <h4 class="normal-text ml-5 mt-3 achieveText pl-2">School Topper (Science Stream) in 12th Standard</h4>
+            </div>
+            <div class="educationType pt-4 pb-4 achieve-2  ">
+                <img src="https://img.icons8.com/ios-glyphs/50/000000/gold-medal.png" class="float-left pt-4">
+                <h4 class="normal-text ml-5 mt-3 achieveText pl-2">Participated in the 2018 Eleventh International
+                    Conference on
+                    Contemporary Computing(IC3)</h4>
+            </div>
+            <div class="educationType pt-4 pb-4 achieve-3  ">
+                <img src="https://img.icons8.com/ios-glyphs/50/000000/gold-medal.png" class="float-left pt-4">
+                <h4 class="normal-text ml-5 mt-3 achieveText pl-2">Led a college level NGO named It's Our Earth</h4>
+            </div>
+            <div class="educationType pt-4 pb-4 achieve-4  ">
+                <img src="https://img.icons8.com/ios-glyphs/50/000000/gold-medal.png" class="float-left pt-4">
+                <h4 class="normal-text ml-5 mt-3 achieveText pl-2">Volunteered for the Unnat Bharat Abhiyan cell of the
+                    college</h4>
+            </div>
+
+
+
+        </div>
+
+    </div>
+    <div class="languageAndInterest">
+        <h2 class="text-center pb-2 border-bottom md-5">Languages & Interests </h2>
+        <div class="langAndInterest mt-5">
+            <div class="language">
+                <div class="lang">
+
+                    <h4 class=" ml-5 pl-2 pt-2 pb-2 float-left">English</h4>
+                    <img src="https://img.icons8.com/material-outlined/24/000000/filled-star.png"
+                        class="float-right pt-2 mr-5">
+                    <img src="https://img.icons8.com/material-outlined/24/000000/filled-star.png"
+                        class="float-right pt-2 ">
+                    <img src="https://img.icons8.com/material-outlined/24/000000/filled-star.png"
+                        class="float-right pt-2 ">
+                    <img src="https://img.icons8.com/material-outlined/24/000000/filled-star.png"
+                        class="float-right pt-2 ">
+                    <img src="https://img.icons8.com/material-outlined/24/000000/filled-star.png"
+                        class="float-right pt-2 ">
+
+                </div>
+                <br>
+
+                <div class="lang">
+                    <h4 class=" ml-5 pl-2 pt-2 pb-2 float-left" style="clear:both;">Hindi</h4>
+                    <img src="https://img.icons8.com/material-outlined/24/000000/filled-star.png"
+                        class="float-right pt-2 mr-5">
+                    <img src="https://img.icons8.com/material-outlined/24/000000/filled-star.png"
+                        class="float-right pt-2">
+                    <img src="https://img.icons8.com/material-outlined/24/000000/filled-star.png"
+                        class="float-right pt-2">
+                    <img src="https://img.icons8.com/material-outlined/24/000000/filled-star.png"
+                        class="float-right pt-2">
+                    <img src="https://img.icons8.com/material-outlined/24/000000/filled-star.png"
+                        class="float-right pt-2">
+                </div>
+
+
+            </div>
+            <div class="interests">
+                <div class="tags">
+
+                    <p class=" text-center border  pt-2 pb-2">Music</p>
+                    <p class=" text-center border  pt-2 pb-2">Football</p>
+                    <p class=" text-center border  pt-2 pb-2">Designing</p>
+                    <p class=" text-center border  pt-2 pb-2">Writing</p>
+                    <p class=" text-center border  pt-2 pb-2">Machine Learning</p>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+    <footer>
+        <div class="cont mt-5">
+            <h4 class="text-center mt-5 mb-5 pt-3"></h4>
+
+        </div>
+        
+    </footer>
+
+
 
 
 

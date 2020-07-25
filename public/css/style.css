@@ -7,16 +7,30 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;    
     background-color: #000000;
-    background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
+    background-image: linear-gradient(-147deg, #000000 0%, #2c3e50 74%);
+    background-size: cover;
     font-weight: 500;
     /* color:white;
     text-shadow:3px 2px black; */
     
 }
+footer{
+    color:white;
+    text-shadow:2px 2px black;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+}
+
+}
+a{
+    text-decoration: none;
+    color:white;
+    text-shadow:none;
+}
 .container{
-    width:1024px;
+    width:1020px;
     display:grid;
-    grid-template-rows: ;
+   
     margin-left:auto;
     margin-right:auto;
     font-family: 'Raleway', sans-serif;
@@ -56,12 +70,12 @@ body {
     padding-top: 2px;
 }
 .educationSkills{
-    width:1024px;
+    width:1020px;
     margin-left:auto;
     margin-right:auto;
-    margin-top;
+    
     display:grid;
-    grid-template-columns: 23% 77%;
+    grid-template-columns: 30% 70%;
     color:white;
     text-shadow:3px 2px black;
 
@@ -80,7 +94,7 @@ body {
 }
 
 .internships{
-    width:1024px;
+    width:1020px;
     margin-left:auto;
     margin-right:auto;
     color:white;
@@ -104,7 +118,7 @@ body {
     color:white;
     text-shadow:3px 2px black;
     text-decoration: none;
-    width:1024px;
+    width:1020px;
     display:grid;
     margin-left:auto;
     margin-right:auto;
@@ -141,4 +155,342 @@ body {
     grid-column: 3/4;
     grid-row:4/5;
     align-self: center;
+}
+.projects{
+    /* display:grid; */
+    color:white;
+    text-shadow:3px 2px black;
+    width:1020px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.projectGrid{
+    display:grid;
+    grid-template-rows: 25% 25% 25%;
+    
+}
+.project-1{
+    grid-row:1/2;
+    
+}
+.project-2{
+    grid-row:2/3;
+}
+.project-3{
+    grid-row:3/4;
+}
+.project-4{
+    grid-row:4/5;
+}
+.achievements{
+    color:white;
+    text-shadow:3px 2px black;
+    width:1020px;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+.achievementGrid{
+    display:grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+}
+.achieve-1{
+    grid-row:1/2;
+    grid-column: 1/2;
+}
+.achieve-2{
+    grid-row:1/2;
+    grid-column: 2/3;
+}
+
+.achieve-3{
+    grid-row:2/3;
+    grid-column: 1/2;
+}
+
+.achieve-4{
+    grid-row:2/3;
+    grid-column: 2/3;
+}
+.languageAndInterest{
+    color:white;
+    text-shadow:3px 2px black;
+    width:1020px;
+    margin-left:auto;
+    margin-right:auto;  
+}
+.langAndInterest{
+    color:white;
+    text-shadow:3px 2px black;
+    width:1020px;
+    margin-left:auto;
+    margin-right:auto;
+    display:grid;
+    grid-template-columns: 60% 40%;
+    grid-row: 30% 10% 50%;
+}
+.language{
+    grid-row:1/2;
+    grid-column: 1/4;
+    /* place-self:center; */
+}
+.interests{
+    grid-row:3/4;
+    grid-column: 1/4;
+    place-self: center;
+
+}
+@media only screen and (max-width:800px){
+    h4{
+        font-size:1.2rem;
+    }
+    .achieveText{
+        font-weight: 400;
+        font-size:0.9rem;
+    }
+    .educationSkills{
+      
+        width:600px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    .container{
+        width:600px;
+       display:grid;
+       margin-left:auto;
+       margin-right:auto;
+       grid-template-rows: 1fr 1fr;
+      
+    }
+    .app-image{
+        grid-row: 1/2;
+        place-self: center;
+    }
+    .header{
+        grid-row: 2/3;
+        place-self: center;
+        font-size: 0.7rem;
+    }
+    .internships{
+        width:600px;
+       /* display:grid; */
+       margin-left:auto;
+       margin-right:auto;
+
+    }
+    .certificates{
+        width:600px;
+        /* display:grid; */
+        margin-left:auto;
+        margin-right:auto;
+
+    }
+    .certificateGrid{
+        display: grid;
+        width:600px;
+        grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .course-1{
+        grid-row:1/2;
+        grid-column: 1/4;
+
+        place-self:center;
+
+    }
+    .course-2{
+        grid-row:2/3;
+        grid-column: 1/4;
+        place-self:center;
+    }
+    .course-3{
+        grid-row:3/4;
+        grid-column: 1/4;
+       
+        place-self:center;
+    }
+    .course-4{
+        grid-row:4/5;
+        grid-column: 1/4;
+        place-self:center;
+    }
+    .course-5{
+        grid-row:5/6;
+        grid-column: 1/4;
+        place-self: center;
+     
+    }
+    .course-6{
+        grid-row:6/7;
+        grid-column: 1/4;
+        place-self:center;
+    }
+    .projects{
+        width:600px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .achievements{
+        width:600px;
+        margin-left:auto;
+        margin-right:auto
+
+    }
+    .languageAndInterest{
+        width:600px;
+        margin-left:auto;
+        margin-right:auto
+
+
+    }
+    .langAndInterest{
+        width:600px;
+        margin-left:auto;
+        margin-right:auto;
+        display:grid;
+        grid-template-rows: 10% 50% 20%;
+        /* grid-template-columns: 5% 0%; */
+    }
+    .language{
+        grid-row:1/2;
+        grid-column: 1/4;
+        /* place-self:center; */
+    }
+    .interests{
+        grid-row:3/4;
+        grid-column: 1/4;
+        place-self: center;
+
+    }
+
+}
+/* Mobile Phones */
+@media only screen and (max-width:600px){
+    
+    h4{
+        font-size:1.2rem;
+    }
+    .achieveText{
+        font-weight: 400;
+        font-size:0.9rem;
+    }
+    .educationSkills{
+      
+        width:320px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    .container{
+        width:320px;
+       display:grid;
+       margin-left:auto;
+       margin-right:auto;
+       grid-template-rows: 1fr 1fr;
+      
+    }
+    .app-image{
+        grid-row: 1/2;
+        place-self: center;
+    }
+    .header{
+        grid-row: 2/3;
+        place-self: center;
+        font-size: 0.7rem;
+    }
+    .internships{
+        width:320px;
+       /* display:grid; */
+       margin-left:auto;
+       margin-right:auto;
+
+    }
+    .certificates{
+        width:320px;
+        /* display:grid; */
+        margin-left:auto;
+        margin-right:auto;
+
+    }
+    .certificateGrid{
+        display: grid;
+        width:320px;
+        grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .course-1{
+        grid-row:1/2;
+        grid-column: 1/4;
+
+        place-self:center;
+
+    }
+    .course-2{
+        grid-row:2/3;
+        grid-column: 1/4;
+        place-self:center;
+    }
+    .course-3{
+        grid-row:3/4;
+        grid-column: 1/4;
+       
+        place-self:center;
+    }
+    .course-4{
+        grid-row:4/5;
+        grid-column: 1/4;
+        place-self:center;
+    }
+    .course-5{
+        grid-row:5/6;
+        grid-column: 1/4;
+        place-self: center;
+     
+    }
+    .course-6{
+        grid-row:6/7;
+        grid-column: 1/4;
+        place-self:center;
+    }
+    .projects{
+        width:320px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .achievements{
+        width:320px;
+        margin-left:auto;
+        margin-right:auto
+
+    }
+    .languageAndInterest{
+        width:320px;
+        margin-left:auto;
+        margin-right:auto
+
+
+    }
+    .langAndInterest{
+        width:320px;
+        margin-left:auto;
+        margin-right:auto;
+        display:grid;
+        grid-template-rows: 10% 50% 20%;
+        /* grid-template-columns: 5% 0%; */
+    }
+    .language{
+        grid-row:1/2;
+        grid-column: 1/4;
+        /* place-self:center; */
+    }
+    .interests{
+        grid-row:3/4;
+        grid-column: 1/4;
+        place-self: center;
+
+    }
 }
